@@ -25,16 +25,7 @@ body {
 .sidenav {
   background: #181818;
   min-height: 100vh;
-<<<<<<< HEAD
   width: 160px;
-=======
-/*<<<<<<< HEAD*/
-  width: 160px;
-/*=======*/
-  width: 165px;
-
-/*>>>>>>> efb367f3a5a7e240ddec6ec9a49d433930df71cd*/
->>>>>>> 0c4e3dd74d8a146caa5388102a10e8255cfe5bba
   /* position: fixed; */
   overflow-x: hidden;
   overflow-y: hidden;
@@ -207,8 +198,6 @@ body {
 }
 
 @media screen and (max-width: 825px) {
-<<<<<<< HEAD
-=======
 /*<<<<<<< HEAD*/
   .HomePage {
     display: flex;
@@ -227,7 +216,6 @@ body {
   /*  min-height: 5vh;*/
   /*  !*=======*!*/
   /*}*/
->>>>>>> 0c4e3dd74d8a146caa5388102a10e8255cfe5bba
 
   .HomePage {
     display: block;
@@ -246,10 +234,6 @@ body {
 
   .sidenav {
     float: right;
-<<<<<<< HEAD
-    width: 100%;
-    min-height: 10vh;
-=======
     padding: 1%;
     width: 8%;
     height: 8%;
@@ -258,7 +242,6 @@ body {
     right: 0;
     /*position: fixed;*/
 /*>>>>>>> efb367f3a5a7e240ddec6ec9a49d433930df71cd*/
->>>>>>> 0c4e3dd74d8a146caa5388102a10e8255cfe5bba
   }
 
   .sidenav .box ul li {
@@ -311,10 +294,6 @@ body {
   }
 
   .sidenav.responsive .box li a {
-<<<<<<< HEAD
-    display: block;
-    text-align: center;
-=======
 /*<<<<<<< HEAD*/
     display: flex;
     flex-direction: column;
@@ -323,17 +302,12 @@ body {
 /*    display: block;*/
     text-align: center;
 /*>>>>>>> efb367f3a5a7e240ddec6ec9a49d433930df71cd*/
->>>>>>> 0c4e3dd74d8a146caa5388102a10e8255cfe5bba
   }
 
   .sidenav.responsive .box2 .fancyfonts {
     display: flex;
     justify-content: center;
   }
-<<<<<<< HEAD
-
-}
-=======
 /*<<<<<<< HEAD*/
 }
 
@@ -343,4 +317,3 @@ body {
 
 
 /*>>>>>>> efb367f3a5a7e240ddec6ec9a49d433930df71cd*/
->>>>>>> 0c4e3dd74d8a146caa5388102a10e8255cfe5bba
