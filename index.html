@@ -12,11 +12,11 @@
 </head>
 
 <body>
-<div class="HomePage">
-  <div class="sidenav">
+<nav class="HomePage">
+  <div class="sidenav" id="dropDownClick">
     <div class="box box1">
       <ul>
-        <li><a href="http://"><img class="Dimg" src="Images/D-HomePage.png" alt="D image" /><p>Deepika</p></a></li>
+        <li class="Image"><a href="http://"><img class="Dimg" src="Images/D-HomePage.png" alt="D image"/><img class="Dimg-font" src="Images/Deepika-font.png" alt="Deepika" srcset=""></a></li>
         <li><a href="http://">Achievements</a></li>
         <li><a href="http://">Contact</a></li>
         <li><a href="http://">Professional</a></li>
@@ -24,7 +24,9 @@
         <li><a href="http://">Research</a></li>
         <li><a href="http://">Students</a></li>
         <li><a href="http://">Teaching</a></li>
+          <li class="hamburgerMenu" id="hamBurger"><a href="javascript:void(0);" onClick="dropdownMenu()">&#9776;</a></li>
       </ul>
+
     </div>
     <div class="box box2">
       <ul class="fancyfonts">
@@ -63,7 +65,25 @@
         <span class="bounce1">scroll down &rarr;</span>
       </div>
   </div>
-</div>
+</nav>
+
+
+<script>
+    function dropdownMenu () {
+        let id = document.getElementById("dropDownClick")
+        let ham = document.getElementById("hamBurger")
+        let anchor = ham.getElementsByTagName('a')
+
+        if (id.className === "sidenav") {
+            id.className += " responsive"
+            anchor[0].innerHTML = "&#10060;"
+        } else {
+            id.className = "sidenav"
+            anchor[0].innerHTML = '&#9776;';
+        }
+    }
+
+</script>
 </body>
 
 </html>
