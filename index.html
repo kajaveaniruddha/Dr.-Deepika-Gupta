@@ -7,19 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deepika Gupta</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="fonts" />
+  <link rel="stylesheet" href="Fonts" />
   <script src="https://kit.fontawesome.com/f238228744.js" crossorigin="anonymous"></script>
 </head>
-<header></header>
 
 <body>
-
-  <div class="sidenav">
-    <div class="box1" id="box">
-      <a href="http://"><img class="Dimg" src="Images/D-HomePage.png" alt="D image" /></a>
-    </div>
-    <div class="box2" id="box">
+<nav class="HomePage">
+  <div class="sidenav" id="dropDownClick">
+    <div class="box box1">
       <ul>
+        <li class="Image"><a href="http://"><img class="Dimg" src="Images/D-HomePage.png" alt="D image"/><img class="Dimg-font" src="Images/Deepika-font.png" alt="Deepika" srcset=""></a></li>
         <li><a href="http://">Achievements</a></li>
         <li><a href="http://">Contact</a></li>
         <li><a href="http://">Professional</a></li>
@@ -27,31 +24,27 @@
         <li><a href="http://">Research</a></li>
         <li><a href="http://">Students</a></li>
         <li><a href="http://">Teaching</a></li>
+          <li class="hamburgerMenu" id="hamBurger"><a href="javascript:void(0);" onClick="dropdownMenu()" style="border: 0px; padding: 5px;padding-top: 10px; width: 40px; height: 40px;">&#9776;</a></li>
       </ul>
+
     </div>
-    <div class="box3" id="box">
+    <div class="box box2">
       <ul class="fancyfonts">
-        <li><a href="http://"><i id="fancy1" class="fa-brands fa-linkedin-in"></i></a></li>
-        <li><a href="http://"><i id="fancy2" class="fa-brands fa-github"></i></a></li>
+        <li><a href="javascript:void(0);"><i id="fancy1" class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/kajaveaniruddha/Dr.-Deepika-Gupta"><i id="fancy2" class="fa-brands fa-github"></i></a></li>
       </ul>
     </div>
   </div>
-
-
-  <div class="HomePage" id="Homepage">
-    <div class="InnerPage" id="InnerPage">
-
+  <div class="InnerPage" id="innerpage">
       <a href="CV.pdf#toolbar=0" target="_blank" class="resume-button" rel="resume">Resume</a>
-
+      <div class="TextArea">
       <section class="home" id="home">
-
-        <div class="TextArea">
           <h1 aria-label="Dr. Deepika Gupta" class="name">
             <span class="colChange" aria-hidden="true" style="opacity: 1;">D</span><span class="colChange"
               aria-hidden="true" style="opacity: 1;">r</span><span class="colChange" aria-hidden="true"
               style="opacity: 1;">.</span>
 
-            <img class="Dhomeimg" src="Images/D-Home.png" alt="D image" /><span class="colChange" aria-hidden="true"
+            <img class="Dhomeimg" src="Images/D-Home.png" alt="D image"/><span class="colChange" aria-hidden="true"
               style="opacity: 1;">e</span><span class="colChange" aria-hidden="true" style="opacity: 1;">e</span><span
               class="colChange" aria-hidden="true" style="opacity: 1;">p</span><span class="colChange"
               aria-hidden="true" style="opacity: 1;">i</span><span class="colChange" aria-hidden="true"
@@ -60,29 +53,36 @@
             <span class="colChange" aria-hidden="true" style="opacity: 1;">G</span><span class="colChange"
               aria-hidden="true" style="opacity: 1;">u</span><span class="colChange" aria-hidden="true"
               style="opacity: 1;">p</span><span class="colChange" aria-hidden="true" style="opacity: 1;">t</span><span
-              class="colChange" aria-hidden="true" style="opacity: 1;">a</span><br>
+              class="colChange" aria-hidden="true" style="opacity: 1;">a</span>
+            <br>
           </h1>
-
           <p class="greyText" id="greyText">
             Assistant Professor <br>IIIT Vadodara-International Campus Diu
           </p>
-
-        </div>
-
-        <div class="scrolldown-right" id="right">
-          <span class="bounce1">scroll down &rarr;</span></div>
-            
-        </div>
-
-      </section>
-
-    </div>
-
+        </section>
+      </div>
+      <div class="scrolldown-right">
+        <span class="bounce1">scroll down &rarr;</span>
+      </div>
   </div>
+</nav>
 
-  </div>
+<script>
+    function dropdownMenu () {
+        let id = document.getElementById("dropDownClick")
+        let ham = document.getElementById("hamBurger")
+        let anchor = ham.getElementsByTagName('a')
 
+        if (id.className === "sidenav") {
+            id.className += " responsive"
+            anchor[0].innerHTML = "&#x2716;"
+        } else {
+            id.className = "sidenav"
+            anchor[0].innerHTML = '&#9776;';
+        }
+    } 
+
+</script>
 </body>
-<footer></footer>
 
 </html>
