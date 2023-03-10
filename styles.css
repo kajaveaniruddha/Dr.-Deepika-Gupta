@@ -76,30 +76,6 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-<<<<<<< Updated upstream
-=======
-body {
-  background: #1d1d1d;
-  letter-spacing: 0.5px;
-  display: block;
-  box-sizing: border-box;
-  font-family: "open Sans", sans-serif;
-  text-size-adjust: 100%;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-#HomePage {
-  min-height: 100vh;
-  position: absolute;
-  display: block;
-  box-sizing: border-box;
-
-}
-
->>>>>>> Stashed changes
 .InnerPage {
   min-height: 100vh;
   /* position: relative; */
@@ -164,8 +140,6 @@ body::-webkit-scrollbar {
   margin-right: -4px;
 }
 
-
-
 .name span {
   box-sizing: border-box;
   display: inline-block;
@@ -214,7 +188,6 @@ body::-webkit-scrollbar {
   100% {
     transform: translateX(-10px);
   }
-<<<<<<< Updated upstream
 }
 
 .sidenav .box ul li.hamburgerMenu {
@@ -303,6 +276,3 @@ body::-webkit-scrollbar {
     justify-content: center;
   }
 }
-=======
-}
->>>>>>> Stashed changes
