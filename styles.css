@@ -189,10 +189,6 @@ body {
   overflow-y: hidden;
 }
 
-.page-out h1 {
-  font-size: 80px;
-  margin-left: 3%;
-}
 .contact-Info {
   margin-top: 1.5%;
   display: flex;
@@ -232,7 +228,7 @@ body {
   display: inline-block;
   color: rgb(141, 141, 141);
   background-color: rgb(43, 43, 43);
-  width: 80%;
+  width: 40%;
   border-width: 0;
   box-sizing: border-box;
   position: relative;
@@ -241,25 +237,6 @@ body {
   margin-left: 50px;
   margin-top: 10px;
   text-indent: 15px;
-}
-
-.input__field_input__field--hoshi-msg {
-  display: inline-block;
-  color: rgb(141, 141, 141);
-  background-color: rgb(43, 43, 43);
-  width: 80%;
-  border-width: 0;
-  box-sizing: border-box;
-  position: relative;
-  height: 100px;
-  font-size: 16px;
-  font-family: "Arial";
-  margin-left: 6%;
-  margin-top: 2%;
-  margin-bottom: 1.5%;
-  text-indent: 15px;
-  padding-top: 10px;
-  /*line-height: */
 }
 
 .contact-form .flat-button {
@@ -277,6 +254,22 @@ body {
   transition: color 0.1s;
 }
 
+
+.input__field_input__field--hoshi-msg {
+  display: inline-block;
+  color: rgb(141, 141, 141);
+  background-color: rgb(43, 43, 43);
+  width: 80%;
+  border-width: 0;
+  box-sizing: border-box;
+  position: relative;
+  height: 100px;
+  font-size: 16px;
+  margin-left: 6%;
+  margin-top: 2%;
+  margin-bottom: 1.5%;
+  text-indent: 15px;
+}
 
 .contact-form .flat-button.disabled {
   opacity: 0.3;
